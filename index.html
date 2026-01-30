@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>💫</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        iframe {
+            border-radius: 12px;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+
+        button {
+            background: #ff6f91;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        button:hover {
+            background: #ff4f7a;
+            transform: scale(1.05);
+        }
+
+        .mensaje {
+            display: none;
+            margin-top: 15px;
+            font-size: 18px;
+            color: #ff4f7a;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h1>Antes de empezar… 👀</h1>
+        <p>Haz clic aquí si tienes curiosidad ✨</p>
+        <button onclick="mostrarMensaje()">Haz clic </button>
+        <div class="mensaje" id="mensaje">
+            Que curiosa eres Ricky💫
+        </div>
+    </div>
+
+    <!-- VIDEOS -->
+    <div class="card">
+        <h1>Mis transmisiones de YouTube 🎥</h1>
+
+        <iframe
+            src="https://www.youtube.com/embed/bQJfUV9HScQ"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe
+            src="https://www.youtube.com/embed/SAN0Q0ovbIw"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe
+            src="https://www.youtube.com/embed/5g8BbeE-2v0"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+<script>
+    function mostrarMensaje() {
+        document.getElementById("mensaje").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
